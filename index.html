@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulSync</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/gradient.png" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="logo">SoulSync</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#learn" class="nav-link">Learn</a>
+                <a href="#resources" class="nav-link">Resources</a>
+                <a href="#aboutus" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <section id="home" class="home-page section">
+            <div class="ai-interaction">
+                <h2>AI Assistant</h2>
+                <p class="section-description">Ask me anything about mental wellness, self-care, or mindfulness!</p>
+                <form id="aiForm" class="ai-form">
+                    <input type="text" id="userInput" class="input-field" placeholder="Enter your question..." required />
+                    <button type="submit" id="submitBtn" class="submit-button">Ask AI</button>
+                </form>
+                <div id="aiResponse" class="ai-response"></div>
+            </div>
+        </section>        
+
+
+            <!-- Learn Section with Cards -->
+            <section id="learn" class="learn-section section">
+                <h3 class="section-title">Learn About Mental Wellness</h3>
+                <p class="section-description">Explore various mental wellness practices, from mindfulness to stress management!</p>
+    
+                <div class="cards-grid">
+                    <div class="card" onclick="navigateTo('mindfulness.html')">
+                        <div class="card-icon">🧘‍♀️</div>
+                        <h3 class="card-title">Mindfulness Practices</h3>
+                        <p class="card-description">Learn techniques to stay present and reduce stress through mindfulness meditation.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('stress_management.html')">
+                        <div class="card-icon">💆‍♂️</div>
+                        <h3 class="card-title">Stress Management</h3>
+                        <p class="card-description">Discover strategies to manage stress and maintain mental clarity during challenging times.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('emotional_wellbeing.html')">
+                        <div class="card-icon">❤️</div>
+                        <h3 class="card-title">Emotional Well-being</h3>
+                        <p class="card-description">Understand the importance of emotional health and how to nurture it for a balanced life.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('mental_health_awareness.html')">
+                        <div class="card-icon">🧠</div>
+                        <h3 class="card-title">Mental Health Awareness</h3>
+                        <p class="card-description">Increase awareness about mental health and learn how to support yourself and others.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('self_care.html')">
+                        <div class="card-icon">🛁</div>
+                        <h3 class="card-title">Self-Care Routines</h3>
+                        <p class="card-description">Incorporate self-care into your daily life to improve your mental wellness.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('journaling.html')">
+                        <div class="card-icon">📓</div>
+                        <h3 class="card-title">Journaling for Clarity</h3>
+                        <p class="card-description">Explore how journaling can help you process emotions, reduce stress, and gain mental clarity.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('sleep_health.html')">
+                        <div class="card-icon">😴</div>
+                        <h3 class="card-title">Sleep Health</h3>
+                        <p class="card-description">Learn the importance of sleep for mental wellness and discover tips for improving sleep quality.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>
+                    <div class="card" onclick="navigateTo('gratitude_practice.html')">
+                        <div class="card-icon">🙏</div>
+                        <h3 class="card-title">Gratitude Practice</h3>
+                        <p class="card-description">Understand the power of gratitude in boosting mental well-being and fostering a positive mindset.</p>
+                        <span class="card-link">Read more →</span>
+                    </div>                    
+                </div>
+            </section>
+    
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section section">
+            <h3 class="section-title">Mental Wellness Resources</h3>
+            <p class="section-description">Explore useful tools, articles, and apps that can help enhance your mental wellness journey.</p>
+
+            <div class="compcontainer">
+                <!-- Resource 1 -->
+                <div class="compcard">
+                    <div class="compcontent">
+                        <h1>Headspace</h1>
+                        <p>
+                            Headspace offers guided meditation and mindfulness exercises to help you manage stress and anxiety.
+                        </p>
+                        <div class="comptags">
+                            <span class="comptag">App</span>
+                            <span class="comptag">Meditation</span>
+                            <span class="comptag">Mental Wellness</span>
+                        </div>
+                    </div>
+                    <div class="compcta">
+                        <a href="https://www.headspace.com/" target="_blank">
+                            <button>Visit Website</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="compcontainer">
+                <!-- Resource 2 -->
+                <div class="compcard">
+                    <div class="compcontent">
+                        <h1>Calm</h1>
+                        <p>
+                            Calm is another popular app for meditation, relaxation, and sleep support, helping you reduce anxiety and improve focus.
+                        </p>
+                        <div class="comptags">
+                            <span class="comptag">App</span>
+                            <span class="comptag">Relaxation</span>
+                            <span class="comptag">Sleep</span>
+                        </div>
+                    </div>
+                    <div class="compcta">
+                        <a href="https://www.calm.com/" target="_blank">
+                            <button>Visit Website</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="compcontainer">
+                <!-- Resource 3 -->
+                <div class="compcard">
+                    <div class="compcontent">
+                        <h1>BetterHelp</h1>
+                        <p>
+                            BetterHelp offers online therapy with licensed counselors to help you with mental health challenges like anxiety, depression, and relationship issues.
+                        </p>
+                        <div class="comptags">
+                            <span class="comptag">Therapy</span>
+                            <span class="comptag">Mental Health</span>
+                            <span class="comptag">Support</span>
+                        </div>
+                    </div>
+                    <div class="compcta">
+                        <a href="https://www.betterhelp.com/" target="_blank">
+                            <button>Visit Website</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+            <!-- About Us Section -->
+            <section id="aboutus" class="aboutus-section section">
+                <h3 class="section-title"></h3>
+                <p class="section-description"></p>
+                <div class="about-us-hero">
+                    <h1>About SoulSync</h1>
+                    <p>We are dedicated to promoting mental wellness and mindfulness practices for a balanced and fulfilling life.</p>
+                </div>
+            
+                
+                <div class="team-section">
+                    <h2>Meet the Founder</h2>
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <img src="profilepic.jpg" alt="Team Member" class="team-image">
+                            <h3 class="team-name">Ashwin Kirubakaran</h3>
+                            <p class="team-role">Founder</p>
+                            <p class="team-bio">Hi, I'm Ashwin, a freshman at the Edison Academy Magnet School, and a passionate advocate for mental wellness. I founded SoulSync to create a platform where individuals can explore tools, resources, and practices to nurture their minds and well-being. With a background in leadership and service projects, I’m committed to helping others achieve mental clarity and emotional balance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section section">
+                <h3 class="section-title">Contact Us</h3>
+                <p class="section-description">We'd love to hear from you! Fill out the form below to get in touch.</p>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-input" rows="5" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        
+            <footer class="footer">
+                <h3>SoulSync</h3>
+                <p>Supporting your mental wellness journey</p>
+            
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ashwin-kirubakaran-465921318/" class="fa-brands fa-linkedin"></a>
+                    <a href="https://www.instagram.com/ashwinkirubakaran/" class="fa-brands fa-instagram"></a>
+                </div>
+            
+                <div class="footer-links">
+                    <a href="#aboutus">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            
+                <div class="copyright">
+                    &copy; 2025 SoulSync. All Rights Reserved.
+                </div>
+            </footer>
+                  
+            
+        </main>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "@google/generative-ai": "https://esm.run/@google/generative-ai"
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        // Function to navigate to the specified page
+        function navigateTo(page) {
+            window.location.href = page; // Redirects to the given page
+        }
+    </script>
+<script type="module" src="main.js"></script>
